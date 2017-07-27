@@ -12,5 +12,8 @@
     "url": "/users/aldunn/documents/nier-automata-checklist"
   },
   "author": "aadunn",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^4.3.0"
+  }
 }
