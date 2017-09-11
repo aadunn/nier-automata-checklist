@@ -1,0 +1,30 @@
+{
+  "name": "nier-automata-checklist",
+  "version": "1.0.0",
+  "description": "A checklist for NieR: Automata (PC)",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "clean": "rm -rf public && mkdir -p public",
+    "build": "npm run clean && npm run build-css",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aadunn/nier-automata-checklist.git"
+  },
+  "author": "Alex Dunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aadunn/nier-automata-checklist/issues"
+  },
+  "homepage": "https://github.com/aadunn/nier-automata-checklist#readme",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "compass": "^0.1.1",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2"
+  }
+}
