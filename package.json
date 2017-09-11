@@ -4,12 +4,11 @@
   "description": "A checklist for NieR: Automata (PC)",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "clean": "rm -rf public && mkdir -p public",
-    "build": "npm run clean && npm run build-css",
-    "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
-    "start": "node server"
+    "build-css": "node-sass --include-path scss src/scss/main.scss src/css/main.css",
+    "watch": "nodemon -e scss -x \"npm run build-css\"",
+    "clean": "rm -rf src/css && mkdir -p src/css",
+    "build": "npm run clean && npm run build-css", 
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
